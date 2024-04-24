@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wedstrijdformulier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="ugent.css">
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h1>Hondentraining - Youna Noynaert</h1>
+                    <nav>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a class="nav-link" href="index.html"> Startpagina </a></li>
+                            <li class="nav-item"><a class="nav-link active" href="wedstrijdformulier.html"> Wedstrijdformulier</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            
+                <main>
+                    <form action="https://formspree.io/f/mzbogrjy" method="POST" >
+                        <fieldset>
+                            <legend>Jouw gegevens</legend>
+                            <div class="form">
+                                <label for="voornaam" class="gegevens">Voornaam</label>
+                                <input id="voornaam" name="voornaam" type="text" required>
+                            </div>
+                            <div class="form">
+                                <label for="achternaam" class="gegevens">Achternaam</label>
+                                <input id="achternaam" name="achternaam" type="text" required>
+                            </div>
+                            <div class="form">
+                                <label for="email" class="gegevens">Jouw e-mail:</label>
+                                    <input id="email" type="email" name="email" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Jouw huisdieren</legend>
+                            <div>
+                                <label for="ikhebhuisdieren" class="form-check-label"> Ik heb huisdieren. </label>
+                                <input id="ikhebhuisdieren" name="huisdieren" type="radio" value="Ja" class="form-check-input">
+                                <label for="ikhebgeenhuisdieren" class="form-check-label"> Ik heb geen huisdieren.</label>
+                                <input id="ikhebgeenhuisdieren" name="huisdieren" type="radio" value="Nee" class="form-check-input">
+                            </div>
+                            <div>
+                                Welke huisdieren heb je?
+                                <label for="hond">Hond</label>
+                                <input id="hond" name="hond" type="checkbox" value="hond">
+                                <label for="kat">Kat</label>
+                                <input id="kat" name="kat" type="checkbox" value="kat">
+                                <label for="konijn">Konijn</label>
+                                <input id="konijn" name="konijn" type="checkbox" value="konijn">
+                                <label for="hamster">Hamster</label>
+                                <input id="hamster" name="hamster" type="checkbox" value="hamster"> <br>
+                                <label for="andere">Andere:</label>
+                                <textarea id="andere" rows="7" cols="15" class="form-control" placeholder="bv.slang"></textarea>
+                                </div>
+                        </fieldset>
+                
+                        <fieldset>
+                            <legend>Wedstrijd</legend>
+                            <div class="form">
+                                Wat is het meest voorkomende huisdier?
+                                <select name="Wat is het meest voorkomende huisdier?">
+                                    <option value="hond">Hond</option>
+                                    <option value="kat">Kat</option>
+                                    <option value="vis">Vis</option>
+                                    <option value="vogel">Vogel</option>
+                                    <option value="knaagdier">Knaagdier</option>
+                                    <option value="reptiel">Reptiel</option>
+                                </select>
+                            </div>
+                            <div class="form">
+                                Hoeveel huisdieren heeft een gemiddeld baasje?
+                                <input name="aantal huisdieren gemmiddeld" id="gemiddeldaantalhuisdieren" type="number" min="1" max="10" step="1" required> 
+                            </div>
+                        </fieldset>
+                        <div class="formbuttons">
+                            <input type="reset" value="Reset" class="btn btn-primary" id="reset">
+                            <input type="submit" value="Verzenden" class="btn btn-primary" id="submit">
+                        </div>
+                    </form>
+                </main>
+            
+                <footer id="footier">
+                    &copy; Youna Noynaert
+                    <time datetime="2022-03-16">16 maart 2022</time> 
+                </footer>     
+            </div>
+        </div>
+    </div>
+    
+</body> 
+
+</html>

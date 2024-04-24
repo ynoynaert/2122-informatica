@@ -1,0 +1,98 @@
+/*puntje 1*/
+dd
+{
+    font-size: smaller;
+}
+
+article p
+{
+    font-size: smaller;
+}
+/*puntje 2*/
+article footer
+{
+    font-style: oblique;
+}
+/*puntje 3*/
+article img
+{
+    border: 5px;
+    border-color: #1E64C8;
+    border-style: double;
+    border-width: 5px;
+    padding: 10px;
+    margin-right: 40px;
+}
+/*puntje 4*/
+strong.tips 
+{
+    color:#1E64C8;
+}
+/*puntje 5*/
+#footier
+{
+    background-color: #1E64C8;
+    color:white;
+}
+/*puntje 6*/
+footer time
+{
+    float:right;
+}
+/*puntje 7*/
+#geel:hover{
+    
+    background-color: #FFD200;
+}
+/*puntje 8*/
+ol > li
+{
+    list-style-type: upper-alpha;
+}
+/*puntje 9 & 10*/
+fieldset, section article
+{
+    border: thin;
+    border-style: solid;
+    border-color: silver;
+    margin: 40px;
+    padding: 40px;
+}
+/*extra CSS*/
+#fieke
+{
+    width: 600px;
+    height: auto;
+}
+#younafieke
+{
+    width:  auto;
+    height: 825px;
+    float: left;
+}
+#spikkelwoefke
+{
+    float:left;
+    width:auto;
+    height:375px;
+}
+#artikel2
+{
+    width: 400px;
+}
+/*bootstrap*/
+.nav-pills .nav-link.active 
+{
+    background-color: #FFD200;
+}
+#submit
+{
+    background-color: #1E64C8;
+    border: #1E64C8;
+}
+#reset
+{
+    background-color: #FFD200;
+    border: #FFD200;
+    color: black;
+}
